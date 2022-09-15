@@ -46,7 +46,7 @@ function isStringPalindrome(string $txt): bool {
 }
 
 function buildSentenceForPalindrome(string $txt): string {
-    return checkIfStringIsPalindrome($txt) ? '"'.$txt.'"'.' est un palindrome !' : '"'.$txt.'"'.' n\'est pas un palindrome !';
+    return isStringPalindrome($txt) ? '"'.$txt.'"'.' est un palindrome !' : '"'.$txt.'"'.' n\'est pas un palindrome !';
 }
 
 echo buildSentenceForPalindrome($mot1);
