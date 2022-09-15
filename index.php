@@ -38,7 +38,7 @@ $mot4 = "ressasser";
 $phrase1 = "Esope reste ici et se repose";
 $phrase2 = "Yo banana boy";
 
-function checkIfStringIsPalindrome(string $txt): bool {
+function isStringPalindrome(string $txt): bool {
     // On retire les espaces pour que ça marche avec les phrases
     $formatedTxt = strtolower(str_replace(' ', '', $txt));
     // On check si la string inversé est égale à la string de base
